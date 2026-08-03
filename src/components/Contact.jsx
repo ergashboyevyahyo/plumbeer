@@ -1,9 +1,9 @@
-import { Phone, Mail, MapPin } from 'lucide-react'
+import { Phone, Mail, MapPin, Clock } from 'lucide-react'
 import content from '../content.json'
 import Reveal from './Reveal.jsx'
 import SplitHeading from './SplitHeading.jsx'
 
-const { headline, subtext, phone, email, address } = content.sections.contact
+const { headline, subtext, phone, email, address, hours } = content.sections.contact
 
 export default function Contact() {
   return (
@@ -30,6 +30,18 @@ export default function Contact() {
                 <MapPin size={16} strokeWidth={1.5} />
                 {address}
               </span>
+            </div>
+
+            <div className="mt-8 flex items-start gap-3">
+              <Clock size={16} strokeWidth={1.5} className="mt-1 shrink-0 text-[var(--color-muted)]" />
+              <div className="flex flex-col gap-1.5">
+                {hours.map((h) => (
+                  <div key={h.days} className="flex items-baseline gap-3 text-sm">
+                    <span className="w-32 shrink-0 text-[var(--color-text)]">{h.days}</span>
+                    <span className="text-[var(--color-muted)]">{h.time}</span>
+                  </div>
+                ))}
+              </div>
             </div>
           </Reveal>
         </div>

@@ -18,6 +18,7 @@ import Loader from './components/Loader.jsx'
 import Cursor from './components/Cursor.jsx'
 import StickyCallButton from './components/StickyCallButton.jsx'
 import { initSmoothScroll, destroySmoothScroll } from './lib/smoothScroll.js'
+import { buildLocalBusinessSchema } from './lib/schema.js'
 
 function setMeta(name, content, attr = 'name') {
   let el = document.querySelector(`meta[${attr}="${name}"]`)
@@ -39,6 +40,14 @@ function App() {
     setMeta('og:description', content.meta.description, 'property')
     setMeta('og:image', content.meta.ogImage, 'property')
     setMeta('twitter:card', 'summary_large_image')
+
+    let script = document.querySelector('script[type="application/ld+json"]')
+    if (!script) {
+      script = document.createElement('script')
+      script.type = 'application/ld+json'
+      document.head.appendChild(script)
+    }
+    script.textContent = JSON.stringify(buildLocalBusinessSchema(content))
 
     initSmoothScroll()
     return () => destroySmoothScroll()

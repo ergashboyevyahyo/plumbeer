@@ -3,7 +3,8 @@
     "siteTitle": "Plumbeer — Reliable Plumbing, Done Right",
     "description": "Fast, honest plumbing services for homes and businesses. Licensed, insured, and available 24/7.",
     "favicon": "/favicon.svg",
-    "ogImage": "https://loremflickr.com/1200/630/plumber,pipes"
+    "ogImage": "https://loremflickr.com/1200/630/plumber,pipes",
+    "priceRange": "$$"
   },
   "theme": {
     "colors": {
@@ -112,7 +113,13 @@
       "subtext": "Have a plumbing issue or a project in mind? Reach out and we'll get back to you fast.",
       "phone": "(555) 010-1234",
       "email": "hello@plumbeer.com",
-      "address": "Serving the greater metro area"
+      "address": "Serving the greater metro area",
+      "hours": [
+        { "days": "Monday – Friday", "time": "7:00 AM – 7:00 PM" },
+        { "days": "Saturday", "time": "8:00 AM – 4:00 PM" },
+        { "days": "Sunday", "time": "Emergency calls only" },
+        { "days": "Emergencies", "time": "24/7" }
+      ]
     }
   },
   "footer": {
