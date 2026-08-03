@@ -3,7 +3,7 @@ import content from '../content.json'
 import Reveal from './Reveal.jsx'
 import SplitHeading from './SplitHeading.jsx'
 
-const { phone, email, address } = content.sections.contact
+const { headline, subtext, phone, email, address } = content.sections.contact
 
 export default function Contact() {
   return (
@@ -12,13 +12,11 @@ export default function Contact() {
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-end">
           <SplitHeading
             as="h2"
-            text="Get In Touch"
+            text={headline}
             className="md:col-span-7 text-[clamp(2.25rem,5.5vw,4.5rem)] leading-[1] text-[var(--color-text)]"
           />
           <Reveal delay={0.2} className="md:col-span-5">
-            <p className="text-[var(--color-muted)]">
-              Have a plumbing issue or a project in mind? Reach out and we'll get back to you fast.
-            </p>
+            <p className="text-[var(--color-muted)]">{subtext}</p>
             <div className="mt-8 flex flex-col gap-4">
               <a href={`tel:${phone.replace(/[^0-9+]/g, '')}`} className="group flex items-center gap-3 text-[var(--color-text)]">
                 <Phone size={16} strokeWidth={1.5} />

@@ -2,7 +2,7 @@ import content from '../content.json'
 import Reveal from './Reveal.jsx'
 import SplitHeading from './SplitHeading.jsx'
 
-const services = content.sections.services
+const { headline, subtext, items: services } = content.sections.services
 
 export default function Services() {
   return (
@@ -11,11 +11,11 @@ export default function Services() {
         <div className="flex flex-col gap-6 sm:flex-row sm:items-end sm:justify-between">
           <SplitHeading
             as="h2"
-            text="What We Do"
+            text={headline}
             className="text-[clamp(2.25rem,5vw,4rem)] leading-[1] text-[var(--color-text)]"
           />
           <Reveal delay={0.15} className="max-w-xs text-sm text-[var(--color-muted)]">
-            Straightforward plumbing services, priced fairly and done right the first time.
+            {subtext}
           </Reveal>
         </div>
 

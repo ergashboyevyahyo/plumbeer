@@ -4,7 +4,7 @@ import { Quote, ArrowLeft, ArrowRight } from 'lucide-react'
 import content from '../content.json'
 import SplitHeading from './SplitHeading.jsx'
 
-const testimonials = content.sections.testimonials
+const { headline, items: testimonials } = content.sections.testimonials
 const SLIDE_DURATION = 6
 
 export default function Testimonials() {
@@ -76,7 +76,7 @@ export default function Testimonials() {
       <div className="mx-auto max-w-3xl text-center">
         <SplitHeading
           as="h2"
-          text="What Homeowners Say"
+          text={headline}
           className="text-[clamp(2.25rem,5vw,4rem)] leading-[1] text-[var(--color-text)]"
         />
 

@@ -56,14 +56,18 @@
         { "src": "https://loremflickr.com/600/600/handshake/all", "alt": "Plumber shaking hands with a homeowner after a repair" }
       ]
     },
-    "services": [
-      { "title": "Leak Detection & Repair", "description": "Fast diagnosis and fixes before small leaks become big damage.", "icon": "droplet" },
-      { "title": "Drain & Sewer Cleaning", "description": "Clear clogs and keep your lines flowing with zero guesswork.", "icon": "waves" },
-      { "title": "Water Heater Installation", "description": "Tank and tankless installs, done clean and up to code.", "icon": "flame" },
-      { "title": "Emergency Plumbing", "description": "Burst pipe at 2am? We answer, day or night.", "icon": "phone-call" },
-      { "title": "Bathroom & Kitchen Repiping", "description": "Full remodel-ready plumbing for renovations and new builds.", "icon": "wrench" },
-      { "title": "Routine Maintenance", "description": "Inspections that catch problems before they cost you.", "icon": "clipboard-check" }
-    ],
+    "services": {
+      "headline": "What We Do",
+      "subtext": "Straightforward plumbing services, priced fairly and done right the first time.",
+      "items": [
+        { "title": "Leak Detection & Repair", "description": "Fast diagnosis and fixes before small leaks become big damage.", "icon": "droplet" },
+        { "title": "Drain & Sewer Cleaning", "description": "Clear clogs and keep your lines flowing with zero guesswork.", "icon": "waves" },
+        { "title": "Water Heater Installation", "description": "Tank and tankless installs, done clean and up to code.", "icon": "flame" },
+        { "title": "Emergency Plumbing", "description": "Burst pipe at 2am? We answer, day or night.", "icon": "phone-call" },
+        { "title": "Bathroom & Kitchen Repiping", "description": "Full remodel-ready plumbing for renovations and new builds.", "icon": "wrench" },
+        { "title": "Routine Maintenance", "description": "Inspections that catch problems before they cost you.", "icon": "clipboard-check" }
+      ]
+    },
     "gallery": {
       "eyebrow": "Recent Work",
       "headline": "See The Craft Up Close.",
@@ -95,12 +99,17 @@
       "subtext": "Join hundreds of homeowners who trust us for fast, honest plumbing work.",
       "cta": "Contact Our Team"
     },
-    "testimonials": [
-      { "name": "Marcus T.", "quote": "Showed up same day, fixed the leak in under an hour, and the price matched the quote exactly." },
-      { "name": "Sarah K.", "quote": "Finally a plumber who explains what's wrong instead of just handing you a bill." },
-      { "name": "David R.", "quote": "Repiped our whole upstairs bathroom — clean work, no mess left behind." }
-    ],
+    "testimonials": {
+      "headline": "What Homeowners Say",
+      "items": [
+        { "name": "Marcus T.", "quote": "Showed up same day, fixed the leak in under an hour, and the price matched the quote exactly." },
+        { "name": "Sarah K.", "quote": "Finally a plumber who explains what's wrong instead of just handing you a bill." },
+        { "name": "David R.", "quote": "Repiped our whole upstairs bathroom — clean work, no mess left behind." }
+      ]
+    },
     "contact": {
+      "headline": "Get In Touch",
+      "subtext": "Have a plumbing issue or a project in mind? Reach out and we'll get back to you fast.",
       "phone": "(555) 010-1234",
       "email": "hello@plumbeer.com",
       "address": "Serving the greater metro area"
