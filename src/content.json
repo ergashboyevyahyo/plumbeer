@@ -1,0 +1,82 @@
+{
+  "meta": {
+    "siteTitle": "Plumbeer — Reliable Plumbing, Done Right",
+    "description": "Fast, honest plumbing services for homes and businesses. Licensed, insured, and available 24/7.",
+    "favicon": "/favicon.svg",
+    "ogImage": "https://picsum.photos/seed/plumbeer-og/1200/630"
+  },
+  "theme": {
+    "colors": {
+      "primary": "#0B0B0A",
+      "secondary": "#EFEDE8",
+      "accent": "#0B0B0A",
+      "background": "#F5F3EF",
+      "text": "#0B0B0A",
+      "muted": "#6E6C66",
+      "inverse": "#F5F3EF"
+    },
+    "fonts": {
+      "heading": "ui-serif, Georgia, Cambria, 'Times New Roman', serif",
+      "body": "-apple-system, BlinkMacSystemFont, 'Inter', sans-serif"
+    }
+  },
+  "sections": {
+    "nav": {
+      "logo": "Plumbeer",
+      "links": ["Home", "Services", "About", "Reviews", "Contact"],
+      "cta": "Book A Service"
+    },
+    "hero": {
+      "badge": "Licensed & Insured",
+      "headline": "Plumbing Done Right, The First Time.",
+      "subtext": "From leaky faucets to full repipes, we bring honest pricing and clean, reliable work to every home we touch.",
+      "cta": "Get A Free Quote",
+      "image": "https://picsum.photos/seed/plumbeer-hero/1600/900",
+      "imageAlt": "Licensed Plumbeer technician repairing a kitchen sink"
+    },
+    "stats": [
+      { "value": "15+", "label": "Years Of Experience" },
+      { "value": "5,000+", "label": "Homes Served" },
+      { "value": "24/7", "label": "Emergency Response" },
+      { "value": "98%", "label": "Customer Satisfaction" }
+    ],
+    "about": {
+      "eyebrow": "2025",
+      "text": "Honoring Old-School Craftsmanship, We Combine Modern Tools And Techniques To Deliver Faster, Cleaner, And More Reliable Plumbing For Every Home.",
+      "tags": ["Licensed Techs", "Upfront Pricing", "Same-Day Service"],
+      "images": [
+        { "src": "https://picsum.photos/seed/plumbeer-1/600/600", "alt": "Plumbeer technician inspecting copper piping" },
+        { "src": "https://picsum.photos/seed/plumbeer-2/600/600", "alt": "Close-up of a plumber's hand tools on a workbench" },
+        { "src": "https://picsum.photos/seed/plumbeer-3/600/600", "alt": "Technician installing a modern tankless water heater" },
+        { "src": "https://picsum.photos/seed/plumbeer-4/600/600", "alt": "Plumber shaking hands with a homeowner after a repair" }
+      ]
+    },
+    "services": [
+      { "title": "Leak Detection & Repair", "description": "Fast diagnosis and fixes before small leaks become big damage.", "icon": "droplet" },
+      { "title": "Drain & Sewer Cleaning", "description": "Clear clogs and keep your lines flowing with zero guesswork.", "icon": "waves" },
+      { "title": "Water Heater Installation", "description": "Tank and tankless installs, done clean and up to code.", "icon": "flame" },
+      { "title": "Emergency Plumbing", "description": "Burst pipe at 2am? We answer, day or night.", "icon": "phone-call" },
+      { "title": "Bathroom & Kitchen Repiping", "description": "Full remodel-ready plumbing for renovations and new builds.", "icon": "wrench" },
+      { "title": "Routine Maintenance", "description": "Inspections that catch problems before they cost you.", "icon": "clipboard-check" }
+    ],
+    "partner": {
+      "headline": "Partner For A Problem-Free Home.",
+      "subtext": "Join hundreds of homeowners who trust us for fast, honest plumbing work.",
+      "cta": "Contact Our Team"
+    },
+    "testimonials": [
+      { "name": "Marcus T.", "quote": "Showed up same day, fixed the leak in under an hour, and the price matched the quote exactly." },
+      { "name": "Sarah K.", "quote": "Finally a plumber who explains what's wrong instead of just handing you a bill." },
+      { "name": "David R.", "quote": "Repiped our whole upstairs bathroom — clean work, no mess left behind." }
+    ],
+    "contact": {
+      "phone": "(555) 010-1234",
+      "email": "hello@plumbeer.com",
+      "address": "Serving the greater metro area"
+    }
+  },
+  "footer": {
+    "links": ["Services", "About", "Reviews", "Contact"],
+    "socials": ["Instagram", "Facebook"]
+  }
+}

@@ -1,0 +1,92 @@
+@import "tailwindcss";
+
+:root {
+  --color-primary: #0b0b0a;
+  --color-secondary: #efede8;
+  --color-accent: #0b0b0a;
+  --color-background: #f5f3ef;
+  --color-text: #0b0b0a;
+  --color-muted: #6e6c66;
+  --color-inverse: #f5f3ef;
+
+  --font-heading: ui-serif, Georgia, Cambria, "Times New Roman", serif;
+  --font-body: -apple-system, BlinkMacSystemFont, "Inter", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: auto;
+}
+
+html.lenis {
+  height: auto;
+}
+
+body {
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: -0.01em;
+}
+
+/* film-grain overlay */
+.grain {
+  position: fixed;
+  inset: 0;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.045;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+/* custom cursor */
+.cursor-dot {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 14px;
+  height: 14px;
+  margin: -7px 0 0 -7px;
+  border-radius: 50%;
+  background: var(--color-inverse);
+  mix-blend-mode: difference;
+  pointer-events: none;
+  z-index: 70;
+  will-change: transform;
+}
+
+.has-custom-cursor .cursor-dot {
+  display: block;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .has-custom-cursor {
+    cursor: none;
+  }
+  .has-custom-cursor a,
+  .has-custom-cursor button {
+    cursor: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
