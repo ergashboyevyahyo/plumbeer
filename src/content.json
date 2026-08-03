@@ -3,7 +3,7 @@
     "siteTitle": "Plumbeer — Reliable Plumbing, Done Right",
     "description": "Fast, honest plumbing services for homes and businesses. Licensed, insured, and available 24/7.",
     "favicon": "/favicon.svg",
-    "ogImage": "https://picsum.photos/seed/plumbeer-og/1200/630"
+    "ogImage": "https://loremflickr.com/1200/630/plumber,pipes"
   },
   "theme": {
     "colors": {
@@ -23,7 +23,7 @@
   "sections": {
     "nav": {
       "logo": "Plumbeer",
-      "links": ["Home", "Services", "About", "Reviews", "Contact"],
+      "links": ["Home", "Services", "About", "Reviews", "FAQ", "Contact"],
       "cta": "Book A Service"
     },
     "hero": {
@@ -31,8 +31,13 @@
       "headline": "Plumbing Done Right, The First Time.",
       "subtext": "From leaky faucets to full repipes, we bring honest pricing and clean, reliable work to every home we touch.",
       "cta": "Get A Free Quote",
-      "image": "https://picsum.photos/seed/plumbeer-hero/1600/900",
+      "image": "https://loremflickr.com/1600/900/plumber,repair/all",
       "imageAlt": "Licensed Plumbeer technician repairing a kitchen sink"
+    },
+    "trust": {
+      "license": "Licensed #PL-48213 · Bonded & Insured",
+      "rating": { "score": "4.9", "count": "340", "platform": "Google Reviews" },
+      "badges": ["Licensed & Bonded", "Fully Insured", "EPA Certified", "BBB Accredited"]
     },
     "stats": [
       { "value": "15+", "label": "Years Of Experience" },
@@ -45,10 +50,10 @@
       "text": "Honoring Old-School Craftsmanship, We Combine Modern Tools And Techniques To Deliver Faster, Cleaner, And More Reliable Plumbing For Every Home.",
       "tags": ["Licensed Techs", "Upfront Pricing", "Same-Day Service"],
       "images": [
-        { "src": "https://picsum.photos/seed/plumbeer-1/600/600", "alt": "Plumbeer technician inspecting copper piping" },
-        { "src": "https://picsum.photos/seed/plumbeer-2/600/600", "alt": "Close-up of a plumber's hand tools on a workbench" },
-        { "src": "https://picsum.photos/seed/plumbeer-3/600/600", "alt": "Technician installing a modern tankless water heater" },
-        { "src": "https://picsum.photos/seed/plumbeer-4/600/600", "alt": "Plumber shaking hands with a homeowner after a repair" }
+        { "src": "https://loremflickr.com/600/600/plumbing,pipes/all", "alt": "Plumbeer technician inspecting copper piping" },
+        { "src": "https://loremflickr.com/600/600/tools,wrench/all", "alt": "Close-up of a plumber's hand tools on a workbench" },
+        { "src": "https://loremflickr.com/600/600/waterheater/all", "alt": "Technician installing a modern tankless water heater" },
+        { "src": "https://loremflickr.com/600/600/handshake/all", "alt": "Plumber shaking hands with a homeowner after a repair" }
       ]
     },
     "services": [
@@ -59,6 +64,32 @@
       { "title": "Bathroom & Kitchen Repiping", "description": "Full remodel-ready plumbing for renovations and new builds.", "icon": "wrench" },
       { "title": "Routine Maintenance", "description": "Inspections that catch problems before they cost you.", "icon": "clipboard-check" }
     ],
+    "gallery": {
+      "eyebrow": "Recent Work",
+      "headline": "See The Craft Up Close.",
+      "items": [
+        { "src": "https://loremflickr.com/700/900/kitchen,sink/all", "label": "Kitchen Sink Repipe", "alt": "Repiped kitchen sink installation" },
+        { "src": "https://loremflickr.com/700/900/bathroom,plumbing/all", "label": "Bathroom Remodel", "alt": "Bathroom plumbing remodel" },
+        { "src": "https://loremflickr.com/700/900/waterheater,install/all", "label": "Water Heater Install", "alt": "New tankless water heater installation" },
+        { "src": "https://loremflickr.com/700/900/pipes,copper/all", "label": "Copper Repipe", "alt": "Copper pipe replacement" }
+      ]
+    },
+    "faq": {
+      "eyebrow": "Questions",
+      "headline": "Frequently Asked.",
+      "items": [
+        { "q": "Do you offer free estimates?", "a": "Yes — every estimate is free, with no obligation and no hidden fees. We'll give you a clear price before any work starts." },
+        { "q": "How fast can you respond to an emergency?", "a": "We aim to be on-site within 60 minutes for emergency calls, 24 hours a day, 7 days a week." },
+        { "q": "Are you licensed and insured?", "a": "Yes — we're fully licensed, bonded, and insured. Our license number is available on request and posted on every invoice." },
+        { "q": "Do you offer financing on larger jobs?", "a": "Yes, we offer flexible financing plans for bigger projects like water heater replacements and full repiping." },
+        { "q": "What areas do you serve?", "a": "We serve the greater metro area and surrounding suburbs — see our service area below, or give us a call to confirm your neighborhood." }
+      ]
+    },
+    "serviceArea": {
+      "eyebrow": "Where We Work",
+      "headline": "Proudly Serving The Greater Metro Area.",
+      "cities": ["Downtown", "Riverside", "Oak Park", "Lakeview", "Westfield", "Brookhaven", "Summit Heights", "Cedar Grove", "Harbor District", "Mapleton"]
+    },
     "partner": {
       "headline": "Partner For A Problem-Free Home.",
       "subtext": "Join hundreds of homeowners who trust us for fast, honest plumbing work.",
@@ -76,7 +107,7 @@
     }
   },
   "footer": {
-    "links": ["Services", "About", "Reviews", "Contact"],
+    "links": ["Services", "About", "Reviews", "FAQ", "Contact"],
     "socials": ["Instagram", "Facebook"]
   }
 }

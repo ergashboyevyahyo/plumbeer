@@ -7,7 +7,7 @@ const { headline, subtext, cta } = content.sections.partner
 
 export default function Partner() {
   return (
-    <section className="bg-[var(--color-primary)] px-4 py-28 text-center text-[var(--color-inverse)] sm:px-8 sm:py-40">
+    <section className="bg-[var(--color-primary)] px-4 py-20 text-center text-[var(--color-inverse)] sm:px-8 sm:py-28">
       <div className="mx-auto max-w-3xl">
         <SplitHeading
           as="h2"

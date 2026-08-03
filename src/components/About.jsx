@@ -33,8 +33,8 @@ export default function About() {
   }, [])
 
   return (
-    <section id="about" className="px-4 py-28 sm:px-8 sm:py-40">
-      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-16 md:grid-cols-12">
+    <section id="about" className="px-4 py-20 sm:px-8 sm:py-28">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-start gap-12 md:grid-cols-12">
         <div className="md:col-span-5">
           <span className="text-xs uppercase tracking-[0.25em] text-[var(--color-muted)]">{eyebrow}</span>
           <SplitHeading

@@ -9,7 +9,7 @@ function toId(label) {
 
 export default function Footer() {
   return (
-    <footer className="border-t border-[var(--color-text)]/12 px-4 pb-10 pt-16 sm:px-8">
+    <footer className="border-t border-[var(--color-text)]/12 px-4 pb-24 pt-16 sm:px-8 sm:pb-10">
       <div className="mx-auto max-w-[1400px]">
         <a
           href="#home"
@@ -18,7 +18,7 @@ export default function Footer() {
           {logo}
         </a>
 
-        <div className="mt-12 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
+        <div className="mt-10 flex flex-col items-start justify-between gap-6 sm:flex-row sm:items-center">
           <nav className="flex flex-wrap items-center gap-6">
             {links.map((link) => (
               <a

@@ -48,43 +48,48 @@ export default function Hero() {
   }, [])
 
   return (
-    <section id="home" className="overflow-hidden px-4 pb-0 pt-40 sm:px-8 sm:pt-48">
-      <div className="mx-auto max-w-[1400px]">
-        <div
-          ref={badgeRef}
-          className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-[var(--color-muted)]"
-        >
-          <span className="h-px w-8 bg-[var(--color-muted)]" />
-          {badge}
-        </div>
-
-        <SplitHeading
-          as="h1"
-          text={headline}
-          delay={0.6}
-          trigger={false}
-          className="max-w-5xl text-[clamp(2.75rem,7vw,6.5rem)] leading-[0.98] text-[var(--color-text)]"
-        />
-
-        <div ref={subRef} className="mt-10 flex flex-col items-start gap-8 sm:flex-row sm:items-end sm:justify-between">
-          <p className="max-w-md text-base text-[var(--color-muted)] sm:text-lg">{subtext}</p>
-          <MagneticButton
-            as="a"
-            href="#contact"
-            className="inline-flex shrink-0 items-center gap-3 rounded-full border border-[var(--color-text)] px-7 py-3.5 text-sm tracking-wide text-[var(--color-text)] transition-colors hover:bg-[var(--color-text)] hover:text-[var(--color-inverse)]"
+    <section id="home" className="overflow-hidden px-4 pb-20 pt-32 sm:px-8 sm:pb-28 sm:pt-40">
+      <div className="mx-auto grid max-w-[1400px] grid-cols-1 items-center gap-12 lg:grid-cols-12 lg:gap-8">
+        <div className="lg:col-span-6">
+          <div
+            ref={badgeRef}
+            className="mb-6 flex items-center gap-3 text-xs uppercase tracking-[0.25em] text-[var(--color-muted)]"
           >
-            {cta}
-          </MagneticButton>
-        </div>
-      </div>
+            <span className="h-px w-8 bg-[var(--color-muted)]" />
+            {badge}
+          </div>
 
-      <div ref={imgWrapRef} className="relative mt-20 h-[60vh] w-full overflow-hidden sm:ml-[8%] sm:w-[92%] sm:h-[78vh]">
-        <img
-          src={image}
-          alt={imageAlt}
-          loading="eager"
-          className="h-[120%] w-full scale-105 object-cover grayscale"
-        />
+          <SplitHeading
+            as="h1"
+            text={headline}
+            delay={0.6}
+            trigger={false}
+            className="text-[clamp(2.5rem,5.5vw,4.5rem)] leading-[1] text-[var(--color-text)]"
+          />
+
+          <div ref={subRef} className="mt-8 flex flex-col items-start gap-6">
+            <p className="max-w-md text-base text-[var(--color-muted)] sm:text-lg">{subtext}</p>
+            <MagneticButton
+              as="a"
+              href="#contact"
+              className="inline-flex shrink-0 items-center gap-3 rounded-full border border-[var(--color-text)] px-7 py-3.5 text-sm tracking-wide text-[var(--color-text)] transition-colors hover:bg-[var(--color-text)] hover:text-[var(--color-inverse)]"
+            >
+              {cta}
+            </MagneticButton>
+          </div>
+        </div>
+
+        <div
+          ref={imgWrapRef}
+          className="relative h-[50vh] w-full overflow-hidden lg:col-span-6 lg:h-[36rem]"
+        >
+          <img
+            src={image}
+            alt={imageAlt}
+            loading="eager"
+            className="h-[120%] w-full scale-105 object-cover grayscale"
+          />
+        </div>
       </div>
     </section>
   )

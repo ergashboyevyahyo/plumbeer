@@ -7,8 +7,8 @@ const { phone, email, address } = content.sections.contact
 
 export default function Contact() {
   return (
-    <section id="contact" className="px-4 py-28 sm:px-8 sm:py-40">
-      <div className="mx-auto max-w-[1400px] border-t border-[var(--color-text)]/12 pt-16">
+    <section id="contact" className="px-4 py-20 sm:px-8 sm:py-28">
+      <div className="mx-auto max-w-[1400px] border-t border-[var(--color-text)]/12 pt-12">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-12 md:items-end">
           <SplitHeading
             as="h2"

@@ -3,15 +3,20 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import content from './content.json'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
+import TrustBar from './components/TrustBar.jsx'
 import Stats from './components/Stats.jsx'
 import About from './components/About.jsx'
 import Services from './components/Services.jsx'
+import Gallery from './components/Gallery.jsx'
 import Partner from './components/Partner.jsx'
 import Testimonials from './components/Testimonials.jsx'
+import Faq from './components/Faq.jsx'
+import ServiceArea from './components/ServiceArea.jsx'
 import Contact from './components/Contact.jsx'
 import Footer from './components/Footer.jsx'
 import Loader from './components/Loader.jsx'
 import Cursor from './components/Cursor.jsx'
+import StickyCallButton from './components/StickyCallButton.jsx'
 import { initSmoothScroll, destroySmoothScroll } from './lib/smoothScroll.js'
 
 function setMeta(name, content, attr = 'name') {
@@ -51,14 +56,19 @@ function App() {
       <Nav />
       <main>
         <Hero />
+        <TrustBar />
         <Stats />
         <About />
         <Services />
+        <Gallery />
         <Partner />
         <Testimonials />
+        <Faq />
+        <ServiceArea />
         <Contact />
       </main>
       <Footer />
+      <StickyCallButton />
     </>
   )
 }
