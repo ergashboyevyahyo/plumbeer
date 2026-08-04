@@ -119,7 +119,13 @@
         { "days": "Saturday", "time": "8:00 AM – 4:00 PM" },
         { "days": "Sunday", "time": "Emergency calls only" },
         { "days": "Emergencies", "time": "24/7" }
-      ]
+      ],
+      "form": {
+        "namePlaceholder": "Your name",
+        "phonePlaceholder": "Phone number",
+        "messagePlaceholder": "Tell us what's going on...",
+        "submitLabel": "Send Message"
+      }
     }
   },
   "footer": {
