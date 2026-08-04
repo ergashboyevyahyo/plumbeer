@@ -52,7 +52,7 @@
       "tags": ["Licensed Techs", "Upfront Pricing", "Same-Day Service"],
       "images": [
         { "src": "/images/pexels-artempodrez-5025491.jpg", "alt": "Plumbeer technician noting job details" },
-        { "src": "https://loremflickr.com/600/600/tools,wrench/all", "alt": "Close-up of a plumber's hand tools on a workbench" },
+        { "src": "/images/van.jpg", "alt": "Plumbeer service van on the way to a job" },
         { "src": "https://loremflickr.com/600/600/waterheater/all", "alt": "Technician installing a modern tankless water heater" },
         { "src": "https://loremflickr.com/600/600/handshake/all", "alt": "Plumber shaking hands with a homeowner after a repair" }
       ]
@@ -76,7 +76,7 @@
         { "src": "/images/hero.jpg", "label": "Kitchen Sink Repipe", "alt": "Repiped kitchen sink installation" },
         { "src": "/images/bathroom.jpg", "label": "Bathroom Remodel", "alt": "Bathroom plumbing remodel" },
         { "src": "/images/heating.jpg", "label": "Water Heater Install", "alt": "New tankless water heater installation" },
-        { "src": "https://loremflickr.com/700/900/pipes,copper/all", "label": "Copper Repipe", "alt": "Copper pipe replacement" }
+        { "src": "/images/kitchen.jpg", "label": "Faucet & Fixture Repair", "alt": "Freshly repaired kitchen faucet running clean" }
       ]
     },
     "faq": {
@@ -111,8 +111,8 @@
     "contact": {
       "headline": "Get In Touch",
       "subtext": "Have a plumbing issue or a project in mind? Reach out and we'll get back to you fast.",
-      "phone": "(555) 010-1234",
-      "email": "hello@plumbeer.com",
+      "phone": "+1 701-403-1300",
+      "email": "mr1daij0bu@gmail.com",
       "address": "Serving the greater metro area",
       "hours": [
         { "days": "Monday – Friday", "time": "7:00 AM – 7:00 PM" },
