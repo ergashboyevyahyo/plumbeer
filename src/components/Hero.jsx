@@ -80,7 +80,13 @@ export default function Hero({ ready = true }) {
         ref={imageRef}
         className="mx-auto mt-16 h-[42vh] max-w-6xl overflow-hidden rounded-[2rem] sm:h-[56vh]"
       >
-        <img src={image} alt={imageAlt} className="h-full w-full object-cover grayscale" />
+        <img
+          src={image}
+          alt={imageAlt}
+          decoding="async"
+          fetchPriority="high"
+          className="h-full w-full object-cover grayscale"
+        />
       </div>
     </section>
   )

@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import content from './content.json'
 import Nav from './components/Nav.jsx'
 import Hero from './components/Hero.jsx'
@@ -53,10 +52,6 @@ function App() {
     initSmoothScroll()
     return () => destroySmoothScroll()
   }, [])
-
-  useEffect(() => {
-    if (!loading) ScrollTrigger.refresh()
-  }, [loading])
 
   return (
     <>
