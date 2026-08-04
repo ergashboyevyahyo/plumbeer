@@ -3,7 +3,7 @@
     "siteTitle": "Plumbeer — Reliable Plumbing, Done Right",
     "description": "Fast, honest plumbing services for homes and businesses. Licensed, insured, and available 24/7.",
     "favicon": "/favicon.svg",
-    "ogImage": "https://loremflickr.com/1200/630/plumber,pipes",
+    "ogImage": "/images/hero-img.webp",
     "priceRange": "$$"
   },
   "theme": {
@@ -32,7 +32,7 @@
       "headline": "Plumbing Done Right, The First Time.",
       "subtext": "From leaky faucets to full repipes, we bring honest pricing and clean, reliable work to every home we touch.",
       "cta": "Get A Free Quote",
-      "image": "https://loremflickr.com/1600/900/plumber,repair/all",
+      "image": "/images/hero-img.webp",
       "imageAlt": "Licensed Plumbeer technician repairing a kitchen sink"
     },
     "trust": {
@@ -51,7 +51,7 @@
       "text": "Honoring Old-School Craftsmanship, We Combine Modern Tools And Techniques To Deliver Faster, Cleaner, And More Reliable Plumbing For Every Home.",
       "tags": ["Licensed Techs", "Upfront Pricing", "Same-Day Service"],
       "images": [
-        { "src": "https://loremflickr.com/600/600/plumbing,pipes/all", "alt": "Plumbeer technician inspecting copper piping" },
+        { "src": "/images/pexels-artempodrez-5025491.jpg", "alt": "Plumbeer technician noting job details" },
         { "src": "https://loremflickr.com/600/600/tools,wrench/all", "alt": "Close-up of a plumber's hand tools on a workbench" },
         { "src": "https://loremflickr.com/600/600/waterheater/all", "alt": "Technician installing a modern tankless water heater" },
         { "src": "https://loremflickr.com/600/600/handshake/all", "alt": "Plumber shaking hands with a homeowner after a repair" }
@@ -73,9 +73,9 @@
       "eyebrow": "Recent Work",
       "headline": "See The Craft Up Close.",
       "items": [
-        { "src": "https://loremflickr.com/700/900/kitchen,sink/all", "label": "Kitchen Sink Repipe", "alt": "Repiped kitchen sink installation" },
-        { "src": "https://loremflickr.com/700/900/bathroom,plumbing/all", "label": "Bathroom Remodel", "alt": "Bathroom plumbing remodel" },
-        { "src": "https://loremflickr.com/700/900/waterheater,install/all", "label": "Water Heater Install", "alt": "New tankless water heater installation" },
+        { "src": "/images/hero.jpg", "label": "Kitchen Sink Repipe", "alt": "Repiped kitchen sink installation" },
+        { "src": "/images/bathroom.jpg", "label": "Bathroom Remodel", "alt": "Bathroom plumbing remodel" },
+        { "src": "/images/heating.jpg", "label": "Water Heater Install", "alt": "New tankless water heater installation" },
         { "src": "https://loremflickr.com/700/900/pipes,copper/all", "label": "Copper Repipe", "alt": "Copper pipe replacement" }
       ]
     },

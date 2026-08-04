@@ -38,7 +38,8 @@ function App() {
     setMeta('description', content.meta.description)
     setMeta('og:title', content.meta.siteTitle, 'property')
     setMeta('og:description', content.meta.description, 'property')
-    setMeta('og:image', content.meta.ogImage, 'property')
+    const ogImageUrl = new URL(content.meta.ogImage, window.location.origin).href
+    setMeta('og:image', ogImageUrl, 'property')
     setMeta('twitter:card', 'summary_large_image')
 
     let script = document.querySelector('script[type="application/ld+json"]')
