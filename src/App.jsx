@@ -65,7 +65,7 @@ function App() {
       <Loader onDone={() => setLoading(false)} />
       <Nav />
       <main>
-        <Hero />
+        <Hero ready={!loading} />
         <TrustBar />
         <Stats />
         <About />

@@ -5,7 +5,7 @@ import { splitWords } from '../lib/splitWords.js'
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function SplitHeading({ text, as: Tag = 'h2', className = '', delay = 0, trigger = true }) {
+export default function SplitHeading({ text, as: Tag = 'h2', className = '', delay = 0, trigger = true, ready = true }) {
   const containerRef = useRef(null)
   const words = splitWords(text)
 
@@ -14,6 +14,11 @@ export default function SplitHeading({ text, as: Tag = 'h2', className = '', del
     if (!el) return
 
     const targets = el.querySelectorAll('span span')
+
+    if (!ready) {
+      gsap.set(targets, { yPercent: 110, opacity: 0 })
+      return
+    }
 
     const ctx = gsap.context(() => {
       gsap.fromTo(
@@ -38,7 +43,7 @@ export default function SplitHeading({ text, as: Tag = 'h2', className = '', del
     }, el)
 
     return () => ctx.revert()
-  }, [text, delay, trigger])
+  }, [text, delay, trigger, ready])
 
   return (
     <Tag ref={containerRef} className={className}>

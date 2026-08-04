@@ -8,26 +8,31 @@ import MagneticButton from './MagneticButton.jsx'
 const { badge, headline, subtext, cta, image, imageAlt } = content.sections.hero
 const { phone } = content.sections.contact
 
-export default function Hero() {
+export default function Hero({ ready = true }) {
   const badgeRef = useRef(null)
   const subRef = useRef(null)
   const imageRef = useRef(null)
 
   useEffect(() => {
+    if (!ready) {
+      gsap.set([badgeRef.current, subRef.current], { opacity: 0, y: 20 })
+      gsap.set(imageRef.current, { opacity: 0, y: 24 })
+      return
+    }
     const ctx = gsap.context(() => {
       gsap.fromTo(
         [badgeRef.current, subRef.current],
         { opacity: 0, y: 20 },
-        { opacity: 1, y: 0, duration: 1, stagger: 0.15, delay: 0.9, ease: 'power3.out' }
+        { opacity: 1, y: 0, duration: 1, stagger: 0.15, delay: 0.1, ease: 'power3.out' }
       )
       gsap.fromTo(
         imageRef.current,
         { opacity: 0, y: 24 },
-        { opacity: 1, y: 0, duration: 1, delay: 1.1, ease: 'power3.out' }
+        { opacity: 1, y: 0, duration: 1, delay: 0.3, ease: 'power3.out' }
       )
     })
     return () => ctx.revert()
-  }, [])
+  }, [ready])
 
   return (
     <section id="home" className="px-4 pb-20 pt-32 text-center sm:px-8 sm:pb-28 sm:pt-40">
@@ -43,8 +48,9 @@ export default function Hero() {
         <SplitHeading
           as="h1"
           text={headline}
-          delay={0.3}
+          delay={0}
           trigger={false}
+          ready={ready}
           className="text-[clamp(2.25rem,6vw,4.75rem)] leading-[1.1] text-[var(--color-text)]"
         />
 
