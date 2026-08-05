@@ -124,7 +124,8 @@
         "namePlaceholder": "Your name",
         "phonePlaceholder": "Phone number",
         "messagePlaceholder": "Tell us what's going on...",
-        "submitLabel": "Send Message"
+        "submitLabel": "Send Message",
+        "web3formsAccessKey": "b2c6bb37-252a-4b4d-b6a9-c3ca5811abcb"
       }
     }
   },
